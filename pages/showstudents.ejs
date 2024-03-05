@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Students</title>
+</head>
+<body>
+    <h2>All data of students</h2>
+    
+    <% if(students.length>0){%>
+        <% for(var i=0;i<students.length;i++) { %>
+            <tr>
+                <td><%- students[i].roll_no %></td>
+                <td><%- students[i].st_name %></td>
+                <br>
+            </tr>
+        <% } %>
+    <%  } else{ %>
+        <h3>There is no Data in Database</h3>
+    <% }  %>
+</body>
+</html>
